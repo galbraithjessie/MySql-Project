@@ -1,9 +1,7 @@
 USE devcamp_sql_project_schema;
 
 --Query for Average grade given by professors
-SELECT AVG(g.grades_student_grade), p.professor_name
-FROM Grades g, Professors p
-WHERE g.grades_professors_id = p.professors_id;
+
 SELECT professors_name, AVG(grades_student_grade) 
 FROM Students
 JOIN Grades
