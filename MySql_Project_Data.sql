@@ -3,35 +3,50 @@ USE devcamp_sql_project_schema;
 --Script for populating all the database tables with sample data
 
 --Courses Table
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 1');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 1, 1, 1);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 2');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 2, 2, 2);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 3');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 3, 3, 3);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 4');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 4, 4, 4);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 5');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 5, 5, 5);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 6');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 6, 2, 1);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 7');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 7, 3, 2);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 8');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 8, 4, 3);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 9');
+INSERT INTO CCourses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 9, 5, 4);
 
-INSERT INTO Courses(courses_name)
-VALUES ('Demo Course 10');
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 10, 1, 5);
+
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 11, 3, 1);
+
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 12, 4, 2);
+
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 13, 5, 3);
+
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 2', 14, 1, 4);
+
+INSERT INTO Courses(courses_name, courses_id, courses_students_id, courses_professors_id)
+VALUES ('Demo Course 1', 15, 2, 5);
 
 --Students Table
 INSERT INTO Students(students_name, students_email)
@@ -180,122 +195,122 @@ INSERT INTO Professors(professors_name, professors_email)
 VALUES ('Demo 123', 'test123@test.com');
 
 --Grades Table 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (75.0, 1, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (75, 1, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (85.0, 1, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (85, 1, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (72.0, 1, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (72, 1, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (91.0, 1, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (91, 1, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (83.0, 1, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (83, 1, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (95.0, 2, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (95, 2, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (89.0, 2, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (89, 2, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (90.0, 2, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (90, 2, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (91.0, 2, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (91, 2, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (98.0, 2, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (98, 2, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (65.0, 3, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (65, 3, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (75.0, 3, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (75, 3, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (82.0, 3, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (82, 3, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (93.0, 3, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (93, 3, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (73.0, 3, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (73, 3, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (95.0, 4, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (95, 4, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (89.0, 4, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (89, 4, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (90.0, 4, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (90, 4, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (91.0, 4, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (91, 4, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (98.0, 4, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (98, 4, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (79.0, 5, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (79, 5, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (81.0, 5, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (81, 5, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (92.0, 5, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (92, 5, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (51.0, 5, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (51, 5, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (93.0, 5, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (93, 5, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (99.0, 6, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (99, 6, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (97.0, 6, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (97, 6, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (95.0, 6, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (95, 6, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (97.0, 6, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (97, 6, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (98.0, 6, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (98, 6, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (55.0, 7, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (55, 7, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (66.0, 7, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (66, 7, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (72.0, 7, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (72, 7, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (44.0, 7, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (44, 7, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (30.0, 7, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (30, 7, 5)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (81.0, 8, 1)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (81, 8, 1)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (83.0, 8, 2)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (83, 8, 2)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (80.0, 8, 3)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (80, 8, 3)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (81.0, 8, 4)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (81, 8, 4)
 
-INSERT INTO Grades(grades_student_grade, grades_student_id, grades_professors_id)
-VALUES (88.0, 8, 5)
+INSERT INTO Grades(grades_student_grade, grades_student_id, grades_courses_id)
+VALUES (88, 8, 5)
