@@ -40,3 +40,16 @@ JOIN Students
 ON Courses.courses_students_id = students_id
 JOIN Professors
 ON Courses.courses_professors_id = professor_id;
+
+SELECT students_name, 
+	professors_name
+FROM (
+	SELECT COUNT(courses_id)
+    FROM Courses
+    WHERE courses_professors_id = Professors.professors_id
+    AND courses_students_id = Students.students_id
+)
+JOIN Professors
+ON Courses.courses_professors_id = professors_id
+JOIN Students
+ON Courses.courses_students_id = students_id;
